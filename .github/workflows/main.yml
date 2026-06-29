@@ -1,6 +1,3 @@
-  1. main.yml → 연필 → 모두 삭제
-  2. 이것만 입력:
-
   name: test
   on: [push]
   jobs:
