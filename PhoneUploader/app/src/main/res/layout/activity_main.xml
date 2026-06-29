@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📞 통화 녹음 전송"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="통화 종료 시 녹음 파일을 PC로 전송합니다.\nPC의 IP 주소를 입력하세요."
+        android:textSize="14sp"
+        android:textColor="#64748B"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PC IP 주소"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#334155"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editIp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="예: 192.168.219.113"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PC 포트"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#334155"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editPort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="9876"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="설정 저장"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2563EB"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PC IP를 입력하고 저장하세요."
+        android:textSize="13sp"
+        android:textColor="#64748B" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사용법:\n1. PC IP 주소 입력 후 저장\n2. 전화 수신/발신 후 통화 종료\n3. 알림에서 '예' 클릭 → PC로 전송\n4. PMS에서 자동 처리"
+        android:textSize="12sp"
+        android:textColor="#94A3B8"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
